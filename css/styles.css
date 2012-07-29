@@ -61,6 +61,9 @@ body{
   line-height:25px;
   color:#21092E;
 }
+p{
+  margin-bottom:14px;
+}
 li {
   line-height: 25px;
 }
@@ -102,6 +105,11 @@ a {
   margin-left:200px;
   float:left;
 }
+
+#main .span4{
+  width:280px;
+}
+
 .tab-content {
   min-height:400px;
   padding-bottom:5px;
