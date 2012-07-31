@@ -6,17 +6,17 @@
     <link href='css/styles.css' rel='stylesheet' type='text/css' />
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
     <script src='js/bootstrap.js' type='text/javascript'></script>
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-33739475-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33739475-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div class='container'>
@@ -50,10 +50,7 @@
               <h2>Locations</h2>
               <div class='row'>
                 <div class='span4'>
-                  <h3>
-                    Christ Church
-                    <img src='../img/church-small.png' />
-                  </h3>
+                  <h3>Christ Church</h3>
                   <address>
                     Christchurch Road
                     <br />
@@ -70,10 +67,7 @@
                   </p>
                 </div>
                 <div class='span4'>
-                  <h3>
-                    The Great Hall
-                    <img src='../img/hall-small.png' />
-                  </h3>
+                  <h3>The Great Hall</h3>
                   <address>
                     Castle Avenue
                     <br />
@@ -99,39 +93,46 @@
                 for somewhere to spend the afternoon and get a meal.
               </p>
               <h3>Map</h3>
-              <iframe frameborder='0' height='400' marginwidth='0' scrolling='no' src='https://maps.google.com/maps/ms?t=m&amp;msa=0&amp;msid=200070953574731040049.0004c5f5f3cd44b6949a8&amp;source=embed&amp;ie=UTF8&amp;ll=51.062234,-1.320612&amp;spn=0.00472,0.012445&amp;z=16&amp;output=embed' width='100%'></iframe>
-              <p>
-                <a href='https://maps.google.com/maps/ms?t=m&amp;msa=0&amp;msid=200070953574731040049.0004c5f5f3cd44b6949a8&amp;source=embed&amp;ie=UTF8&amp;ll=51.062234,-1.320612&amp;spn=0.00472,0.012445&amp;z=16' target='_blank'>View a larger map</a>
-              </p>
+              <iframe frameborder='0' height='400' id='map' marginwidth='0' scrolling='no' src='http://maps.google.co.uk/maps/ms?t=m&amp;msa=0&amp;msid=200070953574731040049.0004c5f5f3cd44b6949a8&amp;source=embed&amp;ie=UTF8&amp;ll=51.062234,-1.320612&amp;spn=0.00472,0.012445&amp;z=16&amp;output=embed' width='100%'></iframe>
+              <div id='map-key'>
+                <img src='img/church-small.png' />
+                <span>Christ Church</span>
+                <img src='img/hall-small.png' />
+                <span>The Great Hall</span>
+                <a class='pull-right' href='http://maps.google.co.uk/maps/ms?t=m&amp;msa=0&amp;msid=200070953574731040049.0004c5f5f3cd44b6949a8&amp;source=embed&amp;ie=UTF8&amp;ll=51.062234,-1.320612&amp;spn=0.00472,0.012445&amp;z=16' target='_blank'>View a larger map</a>
+              </div>
             </div>
             <div class='tab-pane fade' id='parking'>
               <h2>Parking</h2>
               <h3>Parking</h3>
               <p>
-                There is limited parking at the church and on the surrounding residential roads. We suggest that if you are planning to stay for the day, you park your car in Tower Street Car Park (SO23 8TA) or use the city Park & Ride. For other options check
+                There is limited parking at the church and on the surrounding residential roads.
+              </p>
+              <p>
+                We suggest that if you are planning to stay for the day, you park your car in Tower Street Car Park (SO23 8TA) or use the city Park & Ride. For other options check
                 <a href='http://www.winchester.gov.uk/parking/council-car-parks' target='_blank'>http://www.winchester.gov.uk/parking/council-car-parks</a>
               </p>
               <h3>Public transport</h3>
               <p>Winchester Train Station is only a 10 minute walk from the church and reception venue.</p>
               <h3>Recommended taxi companies</h3>
-              Wintax 01962 878727
+              Wintax - 01962 878727
               <br />
-              Wessex cars 01962 877749
+              Wessex cars - 01962 877749
             </div>
             <div class='tab-pane fade' id='eat'>
               <h2>Places to eat</h2>
               <ul class='unstyled'>
                 <li>
                   <a href='http://www.unionjacksrestaurants.com' target='_blank'>Union Jacks</a>
-                  - pizza by Jamie Oliver
+                  <em>- pizza by Jamie Oliver</em>
                 </li>
                 <li>
                   <a href='http://www.wykehamarmswinchester.co.uk' target='_blank'>The Wykeham Arms</a>
-                  - posh pub grub
+                  <em>- posh pub grub</em>
                 </li>
                 <li>
                   <a href='http://bishoponthebridge.co.uk' target='_blank'>Bishop on the Bridge</a>
-                  - good value pub grub
+                  <em>- good value pub grub</em>
                 </li>
               </ul>
               <p>There are lots of other places to eat at the top of town on Jewry street and also up and down the city high street.</p>
@@ -141,38 +142,50 @@
               <ul class='unstyled'>
                 <li>
                   <a href='http://www.westgateinn.co.uk' target='_blank'>The West Gate Inn</a>
-                  - B&B, VERY close to the venue
+                  <em>- B&B, VERY close to the venue</em>
                 </li>
                 <li>
                   <a href='http://www.thewinchesterroyalhotel.co.uk' target='_blank'>Winchester Royal Hotel</a>
-                  - Forestdale hotel, in the city centre
+                  <em>- Forestdale hotel, in the city centre</em>
                 </li>
                 <li>
                   <a href='http://www.mercure.com/gb/hotel-6619-mercure-winchester-wessex-hotel/index.shtml' target='_blank'>Wessex Hotel</a>
-                  - by the Cathedral, city centre
+                  <em>- by the Cathedral, city centre</em>
                 </li>
                 <li>
                   <a href='http://www.hiwinchester.co.uk' target='_blank'>Holiday Inn</a>
-                  - out of city centre, 10 minute drive
+                  <em>- out of city centre, 10 minute drive</em>
                 </li>
               </ul>
               <p>There are also a number of B&Bs to be found on Google.</p>
             </div>
             <div class='tab-pane fade' id='gifts'>
               <h2>Gift list</h2>
-              <p>Your presence is our presents.</p>
+              <p>
+                <em>Your presence is our presents.</em>
+              </p>
               <p>But if you would like to buy us something for our new home, we have set up a gift list with John Lewis.</p>
-              <a href='https://www.johnlewisgiftlist.com/giftint/guestpassword?giftListNumber=517230' target='_blank'>Gift List no. 517230</a>
+              <p>
+                <em>
+                  <a href='https://www.johnlewisgiftlist.com/giftint/guestpassword?giftListNumber=517230' target='_blank'>Gift List no. 517230</a>
+                </em>
+              </p>
             </div>
             <div class='tab-pane fade' id='rsvp'>
               <h2>RSVP</h2>
               <p>
                 Please reply by email to
-                <a href='mailto:charlottetomwedding@gmail.com?subject=RSVP'>charlottetomwedding@gmail.com</a>
-                including any dietary requirements (if applicable).
+                <em>
+                  <a href='mailto:charlottetomwedding@gmail.com?subject=RSVP'>charlottetomwedding@gmail.com</a>
+                </em>
+                including any dietary requirements, if applicable.
               </p>
-              <p>It would be very helpful if you could reply by 18 August.</p>
-              <p>We&rsquo;re looking forward to celebrating with you!</p>
+              <p>
+                It would be very helpful if you could reply by 18 August.
+              </p>
+              <p>
+                We&rsquo;re looking forward to celebrating with you!
+              </p>
             </div>
           </div>
         </div>

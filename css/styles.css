@@ -50,6 +50,11 @@
      zoom:1; /* hasLayout ie7 trigger */
 }
 
+.nav-tabs > li > a {
+  padding-left:11px;
+  padding-right:11px;
+}
+
 .nav-tabs {
     text-align:center;
 }
@@ -58,18 +63,14 @@
 body{
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   font-size:17px;
-  line-height:25px;
-  color:#21092E;
+  line-height:21px;
 }
 p{
-  margin-bottom:14px;
+  margin-bottom:19px;
 }
 li {
   line-height: 25px;
 }
-h1,
-h2,
-h3,
 a{
   color:#21092E;
 }
@@ -136,4 +137,20 @@ a {
     width: auto;
     margin-left: 0;
   }
+}
+
+h3 img{
+  margin: -5px 0px 0px 2px;
+}
+.nav {
+  margin-bottom:24px;
+}
+#map {
+  margin-bottom:10px;
+}
+#map-key {
+  margin:5px 0px;
+}
+#map-key span{
+  margin-right:15px;
 }
